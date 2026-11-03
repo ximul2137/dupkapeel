@@ -1,0 +1,43 @@
+// Wklej ten blok do sekcji "provider" w pliku:
+//   C:\Users\<TWOJA_NAZWA>\.config\opencode\opencode.jsonc
+// Jeśli plik nie istnieje, użyj całego przykładu z dołu tego pliku.
+
+"geminienterprise-grupkapeel": {
+  "npm": "@ai-sdk/openai-compatible",
+  "name": "geminienterprise-grupkapeel",
+  "options": {
+    "baseURL": "http://localhost:7860/v1",
+    "apiKey": "local-proxy"
+  },
+  "models": {
+    "gemini-4-argon": {
+      "name": "Gemini 4 Argon (geminienterprise-grupkapeel)",
+      "attachment": true,
+      "modalities": { "input": ["text", "image"], "output": ["text"] }
+    },
+    "gemini-3.1-pro-preview": {
+      "name": "Gemini 3.1 Pro Preview (geminienterprise-grupkapeel)",
+      "attachment": true,
+      "modalities": { "input": ["text", "image"], "output": ["text"] }
+    },
+    "gemini-3.5-flash": {
+      "name": "Gemini 3.5 Flash (geminienterprise-grupkapeel)",
+      "attachment": true,
+      "modalities": { "input": ["text", "image"], "output": ["text"] }
+    },
+    "gemini-2.5-pro": {
+      "name": "Gemini 2.5 Pro (geminienterprise-grupkapeel)",
+      "attachment": true,
+      "modalities": { "input": ["text", "image"], "output": ["text"] }
+    }
+  }
+}
+
+// ---- Cały plik opencode.jsonc, jeśli zaczynasz od zera: ----
+// {
+//   "$schema": "https://opencode.ai/config.json",
+//   "provider": {
+//     "geminienterprise-grupkapeel": { ...blok z góry... }
+//   },
+//   "model": "geminienterprise-grupkapeel/gemini-4-argon"
+// }
